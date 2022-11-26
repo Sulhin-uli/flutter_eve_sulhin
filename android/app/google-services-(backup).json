@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "320703133059",
+    "project_id": "flutter-eve-sulhin",
+    "storage_bucket": "flutter-eve-sulhin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320703133059:android:aa44f55e076ca66e1332b6",
+        "android_client_info": {
+          "package_name": "com.example.flutter_eve_sulhin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320703133059-eq8rchokc31jd0q1oja2k1mth65v4pr3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_eve_sulhin",
+            "certificate_hash": "1b7ee8e9b88d405b201d667d8a0de3c1b334a86f"
+          }
+        },
+        {
+          "client_id": "320703133059-10lhfvm4havfsp19sdncjes1rml6mvqm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjreKzpokqJ12l5bj9S6NUE50sxyZVOXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320703133059-10lhfvm4havfsp19sdncjes1rml6mvqm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
