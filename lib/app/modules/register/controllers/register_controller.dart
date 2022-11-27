@@ -10,14 +10,26 @@ class RegisterController extends GetxController {
   final box = GetStorage();
 
   void signUp(String email, String password) {
-    final nameUser = box.read("name");
-    box.write('userData', {
-      "email": email,
-      "password": password,
-      "name": nameUser,
-    });
+    if (email == "" && password == "") {
+      Get.defaultDialog(
+        title: "Warning",
+        titleStyle: TextStyle(fontSize: 12),
+        content: Text(
+          "Email/Password belum terisi!",
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 12),
+        ),
+      );
+    } else {
+      final nameUser = box.read("name");
+      box.write('userData', {
+        "email": email,
+        "password": password,
+        "name": nameUser,
+      });
 
-    Get.offNamed(Routes.LOGIN);
+      Get.offNamed(Routes.LOGIN);
+    }
   }
 
   @override

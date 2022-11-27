@@ -10,6 +10,7 @@ class IntroductionController extends GetxController {
 
   Future<void> googleLogin() async {
     try {
+      handleSignOut();
       await googleSignIn.signIn().then((value) => currentUser = value);
       box.write('name', currentUser!.displayName);
 

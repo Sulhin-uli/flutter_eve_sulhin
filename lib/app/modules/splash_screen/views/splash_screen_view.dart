@@ -1,6 +1,7 @@
 import 'package:easy_splash_screen/easy_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_eve_sulhin/app/modules/home/views/home_view.dart';
+import 'package:flutter_eve_sulhin/app/modules/introduction/views/introduction_view.dart';
 import 'package:flutter_eve_sulhin/app/modules/login/views/login_view.dart';
 import 'package:flutter_eve_sulhin/app/routes/app_pages.dart';
 
@@ -13,12 +14,12 @@ class SplashScreenView extends GetView<SplashScreenController> {
   @override
   Widget build(BuildContext context) {
     return EasySplashScreen(
-      logo: Image.network(
-          'https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/flutter-512.png'),
+      logo: Image.asset("assets/images/intro.png"),
+      logoWidth: 150,
       backgroundColor: Colors.white,
       showLoader: true,
       loaderColor: Colors.green,
-      navigator: LoginView(),
+      navigator: IntroductionView(),
       durationInSeconds: 5,
     );
   }
